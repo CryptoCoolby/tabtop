@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'placeholders';
+
+.app-root {
+  @extend %flex-center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.btn-naked {
+  color: inherit;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
